@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 4em 4em 4em;
+    grid-template-rows: 4em 4em 4em;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.gridTile {
+    background-color: red;
+    width: auto;
+    height: auto;
+    border: 0px solid black;
+    border-radius: 4px;
+    margin: 4px;
+
+}
+
+button:active {
+    background-color: blue;
+}
+
+button:hover {
+    background-color: blue;
+}
