@@ -8,7 +8,8 @@
         "lint": "eslint",
         "lint:fix": "eslint --fix",
         "bundle": "node esbuild.js",
-        "build": "npm run test && npm run lint && npm run typecheck && npm run bundle",
+        "build:ux": "esbuild src/index-ux.tsx --bundle --outfile=dist/public/index-ux.js",
+        "build": "npm run test && npm run lint && npm run typecheck && npm run bundle && npm run build:ux",
         "typecheck": "tsc --project tsconfig.build.json --noEmit",
         "test": "vitest run --globals",
         "test:dev": "vitest --globals"
@@ -32,5 +33,11 @@
         "typescript": "^5.3.3",
         "typescript-eslint": "^7.8.0",
         "vitest": "^1.3.1"
+    },
+    "dependencies": {
+        "@types/react": "^18.3.1",
+        "@types/react-dom": "^18.3.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
     }
 }

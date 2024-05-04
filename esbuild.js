@@ -6,5 +6,5 @@ require('esbuild').buildSync({
     platform: 'node',
     target: ['esnext'],
     tsconfig: 'tsconfig.build.json',
-    outfile: 'dist/index.js',
+    outdir: 'dist/',
   })
