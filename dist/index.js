@@ -1,1 +1,1 @@
-async function o(e,n){e.addEventListener("pageview",t=>{console.log("Hello server!")})}export{o as default};
+async function r(e,t){e.addEventListener("pageview",o=>{console.log("Hello server!")}),e.proxy("/api","https://tic-tac-toe-worker.emerick-bosch.workers.dev/"),e.registerWidget(async()=>"<p>hello, world!</p>")}export{r as default};
