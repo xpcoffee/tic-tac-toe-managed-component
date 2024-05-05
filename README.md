@@ -69,7 +69,7 @@ You need to rebuild this managed component, and to re-launch webCM after every c
 
 ## Making changes to the worker
 
-See this project to make changes to the backend.
+See [this separate repo](https://github.com/xpcoffee/tic-tac-toe-worker) for making changes to the backend.
 
 ## Challenges working with managed-components
 
