@@ -1,4 +1,5 @@
-async function s(t,n){let i=t.proxy("/api","https://tic-tac-toe-worker.emerick-bosch.workers.dev"),e=t.serve("/public","dist/public");t.addEventListener("pageview",o=>{console.log("Worker API running at "+i),console.log("Assets served from "+e)}),t.registerWidget(async()=>`
+async function o(e,s){let i=e.proxy("/api","https://tic-tac-toe-worker.emerick-bosch.workers.dev"),t=e.serve("/public","dist/public");e.addEventListener("pageview",n=>{console.log("Worker API running at "+i),console.log("Assets served from "+t)}),e.registerWidget(async()=>`
         <div id='tic-tac-toe'></div>
-        <script src="${e}/index-ux.js">
-        `)}export{s as default};
+        <script src="${t}/index-ux.js"></script>
+        <link href="${t}/index-ux.css" rel="stylesheet">
+        `)}export{o as default};

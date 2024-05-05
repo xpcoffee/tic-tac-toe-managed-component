@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
-// styles not working
-import "./styles.css"
 
 export const TicTacToe: React.FC = () => {
     const [boardState, setBoardState] = useState<(typeof O | typeof X |undefined)[]>(Array(9).fill(undefined))

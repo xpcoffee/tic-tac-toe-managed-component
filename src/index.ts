@@ -14,7 +14,8 @@ export default async function (manager: Manager, _settings: ComponentSettings) {
     manager.registerWidget(async (): Promise<string> => {
         return `
         <div id='tic-tac-toe'></div>
-        <script src="${publicEndpoint}/index-ux.js">
+        <script src="${publicEndpoint}/index-ux.js"></script>
+        <link href="${publicEndpoint}/index-ux.css" rel="stylesheet">
         `
     });
 
