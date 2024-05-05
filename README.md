@@ -1,10 +1,15 @@
 # tic-tac-toe Managed Component
 
-## Overview
-
-![](./docs/tic-tac-toe%20MC%20overview.jpg)
 
 This managed component embeds an application into a webpage which enables a tic-tac-toe game to be played against a remote opponent.
+
+| | |
+|-|-|
+|![](./docs/screenshot-start.png)|![](./docs/screenshot-end.png)|
+
+## Architecture
+
+![](./docs/tic-tac-toe%20MC%20overview.jpg)
 
 Note: This component requires a [component manager](https://webcm.dev/) in order to work as intended.
 
