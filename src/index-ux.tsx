@@ -21,6 +21,8 @@ export const TicTacToe: React.FC = () => {
     const [boardState, setBoardState] = useState<BoardState>(Array(9).fill(null))
     const [gameStatus, setGameStatus] = useState<string>("active")
 
+    const isBoardEmpty = !boardState.find(value => value != null)
+
     const getNewBoardState = (moveIndex: number): BoardState => {
         const newState = [...boardState]
         newState[moveIndex] = currentPlayer
@@ -64,6 +66,14 @@ export const TicTacToe: React.FC = () => {
         </div>
 
         <div>Game state: {gameStatus}</div>
+
+        {
+            isBoardEmpty && <div>
+                Choose your symbol:
+                <button onClick={() => setCurrentPlayer(X)}>X</button>
+                <button onClick={() => setCurrentPlayer(O)}>O</button>
+            </div>
+        }
     </div>
 }
 
