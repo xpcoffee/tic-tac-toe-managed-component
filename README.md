@@ -39,7 +39,7 @@ Example steps: _Double check them before running them and run them one at a time
 ```bash
 mkdir -p ../tic-tac-toe-webcm/components
 cp local/example.webcm.config.ts ../tic-tac-toe-webcm/webcm.config.ts
-ln -s ./ ../tic-tac-toe-webcm/components/tic-tac-toe
+ln -s "$(pwd)" "../tic-tac-toe-webcm/components/tic-tac-toe"
 cd ../tic-tac-toe-webcm/components
 npx webcm
 ```
